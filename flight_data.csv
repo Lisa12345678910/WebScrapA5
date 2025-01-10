@@ -1,28 +1,3 @@
-Flight,Departure Time,Arrival Time,Airline,Price,Emission,Class Category,Plane
-TO 4750,8:55 AM,10:35 AM,Transavia,€126,74 kg CO2e,Economy,Airbus A320neo
-TO 4756,3:50 PM,5:30 PM,Transavia,€126,74 kg CO2e,Economy,Airbus A320neo
-TO 4758,6:15 PM,7:55 PM,Transavia,€126,74 kg CO2e,Economy,Airbus A320neo
-TO 4800,9:05 PM,10:45 PM,Transavia,€154,74 kg CO2e,Economy,Airbus A320neo
-FR 6375,6:35 PM,8:20 PM,Ryanair,€77,76 kg CO2e,Economy,Boeing 737MAX 8 Passenger
-VY 8015,5:50 PM,7:30 PM,Vueling,€91,81 kg CO2e,Economy,Airbus A320
-VY 8001,9:05 AM,10:45 AM,Vueling,€101,81 kg CO2e,Economy,Airbus A320
-VY 8013,8:20 PM,10:05 PM,Vueling,€101,81 kg CO2e,Economy,Airbus A320
-VY 8251,12:50 PM,2:45 PM,Vueling,€86,83 kg CO2e,Economy,Airbus A320
-VY 8241,8:05 PM,10:00 PM,Vueling,€94,83 kg CO2e,Economy,Airbus A320
-VY 8005,6:45 AM,8:25 AM,Vueling,€101,86 kg CO2e,Economy,Airbus A320
-VY 8009,1:15 PM,3:00 PM,Vueling,€111,86 kg CO2e,Economy,Airbus A320
-VY 8017,5:50 PM,7:30 PM,Vueling,€124,86 kg CO2e,Economy,Airbus A320
-VY 8003,3:35 PM,5:15 PM,Vueling,€91,88 kg CO2e,Economy,Airbus A321
-VY 8007,12:50 PM,2:35 PM,Vueling,€111,88 kg CO2e,Economy,Airbus A321
-VY 8245,8:55 PM,10:50 PM,Vueling,€94,89 kg CO2e,Economy,Airbus A320
-VY 8243,10:10 AM,12:05 PM,Vueling,€86,90 kg CO2e,Economy,Airbus A321
-VY 8249,4:25 PM,6:15 PM,Vueling,€94,90 kg CO2e,Economy,Airbus A321
-AF 1348,9:25 AM,11:15 AM,Air France,€186,91 kg CO2e,Economy,Airbus A320
-FR 3122,9:00 AM,10:45 AM,Ryanair,€77,92 kg CO2e,Economy,Boeing 737
-AF 1048,1:55 PM,3:40 PM,Air France,€214,94 kg CO2e,Economy,Airbus A220-300 Passenger
-AF 1548,3:25 PM,5:10 PM,Air France,€134,95 kg CO2e,Economy,Airbus A321
-AF 1448,8:50 PM,10:40 PM,Air France,€153,95 kg CO2e,Economy,Airbus A321
-AF 1148,7:15 AM,9:00 AM,Air France,€180,107 kg CO2e,Economy,Airbus A319
-AF 1248,6:35 PM,8:20 PM,Air France,€186,107 kg CO2e,Economy,Airbus A319
-AF 1648,1:05 PM,2:50 PM,Air France,€214,107 kg CO2e,Economy,Airbus A319
-W4 6340,7:45 AM,5:05 PM,Vueling,€104,138 kg CO2e,Economy,Non Renseigné
+Flight,Departure Time,Arrival Time,Airline,Price (€),Emission (kg CO2),Class Category,Plane
+W4 6216,4:15 PM,6:20 PM,Wizz Air,€70,81 kg CO2e,Economy,Airbus A321neo
+W4 6062,9:05 AM,11:10 AM,Wizz Air,€80,81 kg CO2e,Economy,Airbus A321neo

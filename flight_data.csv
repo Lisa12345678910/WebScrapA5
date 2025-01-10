@@ -1,30 +1,29 @@
 Flight,Departure Time,Arrival Time,Airline,Price,Emission,Class Category,Plane
-,9:00 AM,10:45 AM,,€77,92 kg CO2e,,
-,10:10 AM,12:05 PM,,€86,90 kg CO2e,,
-,12:50 PM,2:45 PM,,€86,83 kg CO2e,,
-,3:50 PM,5:30 PM,,€109,74 kg CO2e,,
-,6:35 PM,8:20 PM,,€77,76 kg CO2e,,
-,3:35 PM,5:15 PM,,€91,88 kg CO2e,,
-,5:50 PM,7:30 PM,,€91,81 kg CO2e,,
-,4:25 PM,6:15 PM,,€94,90 kg CO2e,,
-,8:05 PM,10:00 PM,,€94,83 kg CO2e,,
-,8:55 PM,10:50 PM,,€94,89 kg CO2e,,
-,6:45 AM,8:25 AM,,€101,86 kg CO2e,,
-,9:05 AM,10:45 AM,,€101,81 kg CO2e,,
-,8:20 PM,10:05 PM,,€101,81 kg CO2e,,
-,7:45 AM,5:05 PM,,€104,138 kg CO2e,,
-,6:15 PM,7:55 PM,,€109,74 kg CO2e,,
-,12:50 PM,2:35 PM,,€111,88 kg CO2e,,
-,1:15 PM,3:00 PM,,€111,86 kg CO2e,,
-,5:50 PM,7:30 PM,,€124,86 kg CO2e,,
-,8:55 AM,10:35 AM,,€126,74 kg CO2e,,
-,3:25 PM,5:10 PM,,€134,95 kg CO2e,,
-,8:50 PM,10:40 PM,,€143,95 kg CO2e,,
-,7:15 AM,9:00 AM,,€180,105 kg CO2e,,
-,9:25 AM,11:15 AM,,€186,90 kg CO2e,,
-,1:55 PM,3:40 PM,,€186,94 kg CO2e,,
-,6:35 PM,8:20 PM,,€186,105 kg CO2e,,
-,7:30 AM,9:20 AM,,€189,87 kg CO2e,,
-,8:35 PM,10:20 PM,,€189,97 kg CO2e,,
-,9:05 PM,10:45 PM,,€242,74 kg CO2e,,
-,1:05 PM,2:50 PM,,€259,105 kg CO2e,,
+TO 4750,9:00 AM,10:45 AM,,€77,92 kg CO2e,,Non renseigné
+TO 4756,10:10 AM,12:05 PM,,€86,90 kg CO2e,,Non renseigné
+TO 4758,12:50 PM,2:45 PM,,€86,83 kg CO2e,,Non renseigné
+TO 4800,6:35 PM,8:20 PM,,€77,76 kg CO2e,,Non renseigné
+FR 6375,3:35 PM,5:15 PM,,€91,88 kg CO2e,,Non renseigné
+VY 8015,5:50 PM,7:30 PM,,€91,81 kg CO2e,,Non renseigné
+VY 8001,4:25 PM,6:15 PM,,€94,90 kg CO2e,,Non renseigné
+VY 8013,8:05 PM,10:00 PM,,€94,83 kg CO2e,,Non renseigné
+VY 8251,8:55 PM,10:50 PM,,€94,89 kg CO2e,,Non renseigné
+VY 8241,6:45 AM,8:25 AM,,€101,86 kg CO2e,,Non renseigné
+VY 8005,9:05 AM,10:45 AM,,€101,81 kg CO2e,,Non renseigné
+VY 8009,8:20 PM,10:05 PM,,€101,81 kg CO2e,,Non renseigné
+VY 8017,7:45 AM,5:05 PM,,€104,138 kg CO2e,,Non renseigné
+U2 4581,12:50 PM,2:35 PM,,€111,88 kg CO2e,,Non renseigné
+VY 8003,1:15 PM,3:00 PM,,€111,86 kg CO2e,,Non renseigné
+VY 8007,5:50 PM,7:30 PM,,€124,86 kg CO2e,,Non renseigné
+VY 8245,8:55 AM,10:35 AM,,€126,74 kg CO2e,,Non renseigné
+VY 8243,3:50 PM,5:30 PM,,€126,74 kg CO2e,,Non renseigné
+VY 8249,6:15 PM,7:55 PM,,€126,74 kg CO2e,,Non renseigné
+AF 1348,3:25 PM,5:10 PM,,€134,95 kg CO2e,,Non renseigné
+FR 3122,7:30 AM,9:20 AM,,€137,87 kg CO2e,,Non renseigné
+AF 1048,8:50 PM,10:40 PM,,€153,95 kg CO2e,,Non renseigné
+AF 1548,7:15 AM,9:00 AM,,€180,107 kg CO2e,,Non renseigné
+AF 1448,9:25 AM,11:15 AM,,€186,91 kg CO2e,,Non renseigné
+AF 1148,6:35 PM,8:20 PM,,€186,107 kg CO2e,,Non renseigné
+AF 1248,1:05 PM,2:50 PM,,€214,107 kg CO2e,,Non renseigné
+AF 1648,1:55 PM,3:40 PM,,€214,94 kg CO2e,,Non renseigné
+W4 6340,9:05 PM,10:45 PM,,€260,74 kg CO2e,,Non renseigné

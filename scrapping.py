@@ -42,9 +42,17 @@ def input_search_criteria(origin, destination, travel_departure):
     )
     origin_input.clear()
     origin_input.send_keys(origin)
+    time.sleep(1)
+    #click on the first suggestion
+    click_first_suggestion = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, '[class="zsRT0d"]'))
+    )
+    click_first_suggestion.click()
     origin_input.send_keys(Keys.ENTER)
 
-    time.sleep(1)
+    
+
+    time.sleep(2)
     destination_input = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, '[aria-label="Where to?"]'))
     )
@@ -63,17 +71,13 @@ def input_search_criteria(origin, destination, travel_departure):
     )
     driver.execute_script("arguments[0].target='_self';", all_flights_button)
     all_flights_button.click()
-
-    # Attendre que la page des vols se charge
     WebDriverWait(driver, 20).until(
         lambda d: "/flights" in d.current_url
     )
     print(f"URL actuelle : {driver.current_url}")
 
-    # Charger le contenu de la page avec BeautifulSoup
     soup = BeautifulSoup(driver.page_source, 'html.parser')
-
-    # Utiliser WebDriverWait pour attendre que le bouton soit cliquable
+    #print(soup)
     sorted_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[aria-label="Sorted by top flights, Change sort order."]'))
     )

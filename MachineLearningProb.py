@@ -9,41 +9,48 @@ from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('flight_data.csv')
+def cleaning_data(df):
+    df['Emission (kg CO2)'] = df['Emission (kg CO2)'].str.replace(' kg CO2e', '').astype(float)
+    df['Price (€)'] = df['Price (€)'].str.replace('€', '').astype(float)
+    df.set_index('Flight', inplace=True)
+    return df
 
-df['Emission'] = df['Emission'].str.replace(' kg CO2e', '').astype(int)
-df['Price'] = df['Price'].str.replace('€', '').astype(int)
-df.set_index('Flight', inplace=True)
+def prepare_classification_data(flight_data):
+    df = pd.DataFrame(flight_data)
+    df = cleaning_data(df)
 
-bins = [0, 100, 200, float('inf')]
-labels = ['Faible', 'Moyen', 'Fort']
-df['Emission_Class'] = pd.cut(df['Emission'], bins=bins, labels=labels)
+    max_emission = df['Emission (kg CO2)'].max()
+    bins = [0, max_emission / 3, 2 * max_emission / 3, max_emission]
+    labels = ['Faible', 'Moyen', 'Fort']
+    df['Emission_Class'] = pd.cut(df['Emission (kg CO2)'], bins=bins, labels=labels, right=False, include_lowest=True)
 
-X = df.drop(columns=['Emission', 'Emission_Class', 'Departure Time', 'Arrival Time'])
-y = df['Emission_Class']
+    df.dropna(subset=['Emission (kg CO2)', 'Price (€)', 'Emission_Class'], inplace=True)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    return df
 
-categorical_features = X.select_dtypes(include=['object']).columns
-numeric_features = X.select_dtypes(exclude=['object']).columns
+def perform_classification(df):
+    X = df[['Emission (kg CO2)', 'Price (€)']]
+    y = df['Emission_Class']
 
-preprocessor = ColumnTransformer(
-    transformers=[
-        ('num', StandardScaler(), numeric_features),
-        ('cat', OneHotEncoder(), categorical_features)
-    ])
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-pipeline = Pipeline(steps=[
-    ('preprocessor', preprocessor),
-    ('classifier', RandomForestClassifier(random_state=42))
-])
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
 
-pipeline.fit(X_train, y_train)
-y_pred = pipeline.predict(X_test)
+    model = RandomForestClassifier(random_state=42)
+    model.fit(X_train_scaled, y_train)
 
-print(classification_report(y_test, y_pred))
-conf_matrix = confusion_matrix(y_test, y_pred)
-sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
-plt.xlabel('Prédiction')
-plt.ylabel('Réel')
-plt.show()
+    y_pred = model.predict(X_test_scaled)
+
+    report = classification_report(y_test, y_pred, output_dict=True)
+    conf_matrix = confusion_matrix(y_test, y_pred)
+
+    return report, conf_matrix
+
+def plot_confusion_matrix(conf_matrix, labels):
+    plt.figure(figsize=(10, 7))
+    sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
+    plt.xlabel('Prédiction')
+    plt.ylabel('Réel')
+    plt.show()

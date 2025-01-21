@@ -1,3 +1,26 @@
 Flight,Departure Time,Arrival Time,Airline,Price (€),Emission (kg CO2),Class Category,Plane
-W4 6216,4:15 PM,6:20 PM,Wizz Air,€70,81 kg CO2e,Economy,Airbus A321neo
-W4 6062,9:05 AM,11:10 AM,Wizz Air,€80,81 kg CO2e,Economy,Airbus A321neo
+W4 6061,6:55 AM,9:10 AM,Wizz Air,€117,79 kg CO2e,Economy,Airbus A321neo
+W4 6215,1:10 PM,3:25 PM,Wizz Air,€210,79 kg CO2e,Economy,Airbus A321neo
+TO 3911,9:40 AM,11:55 AM,Transavia,€136,100 kg CO2e,Economy,Boeing 737
+TO 3919,7:35 PM,9:50 PM,Transavia,€149,100 kg CO2e,Economy,Boeing 737
+U2 4814,9:55 AM,12:05 PM,easyJet,€149,101 kg CO2e,Economy,Airbus A320
+U2 4816,3:45 PM,5:50 PM,easyJet,€151,101 kg CO2e,Economy,Airbus A320
+U2 4818,8:15 PM,10:25 PM,easyJet,€151,101 kg CO2e,Economy,Airbus A320
+FR 167,6:10 AM,8:25 AM,Ryanair,€73,105 kg CO2e,Economy,Boeing 737
+FR 201,2:10 PM,4:25 PM,Ryanair,€128,105 kg CO2e,Economy,Boeing 737
+AF 1405,8:45 PM,10:55 PM,Air France,€170,106 kg CO2e,Economy,Airbus A320
+AF 1205,10:05 AM,12:20 PM,Air France,€248,106 kg CO2e,Economy,Airbus A320
+VY 6255,6:40 AM,8:55 AM,Vueling,€128,106 kg CO2e,Economy,Airbus A320
+VY 6259,4:00 PM,6:10 PM,Vueling,€148,106 kg CO2e,Economy,Airbus A320
+VY 6265,7:35 PM,9:45 PM,Vueling,€149,106 kg CO2e,Economy,Airbus A320
+VY 6261,1:35 PM,3:50 PM,Vueling,€156,106 kg CO2e,Economy,Airbus A320
+AZ 324,3:10 PM,5:20 PM,ITA,€186,111 kg CO2e,Economy,Airbus A321neo
+AZ 316,8:35 AM,10:50 AM,ITA,€193,111 kg CO2e,Economy,Airbus A321neo
+AF 1005,6:00 AM,8:15 AM,Air France,€178,111 kg CO2e,Economy,Airbus A321
+AF 1505,4:50 PM,7:00 PM,Air France,€193,111 kg CO2e,Economy,Airbus A321
+AF 1105,12:50 PM,3:00 PM,Air France,€212,116 kg CO2e,Economy,Airbus A220-300 Passenger
+AF 1305,6:20 PM,8:35 PM,Air France,€202,120 kg CO2e,Economy,Airbus A319
+XZ 2021,9:30 AM,2:45 PM,easyJet,€162,126 kg CO2e,Economy,Non Renseigné
+AZ 318,11:00 AM,1:15 PM,ITA,€186,136 kg CO2e,Economy,Airbus A320
+AZ 332,9:30 PM,11:40 PM,ITA,€741,203 kg CO2e,Business Class,Airbus A320
+W4 3386,8:00 PM,12:45 PM+2,TAROM,€272,362 kg CO2e,Economy,Non Renseigné

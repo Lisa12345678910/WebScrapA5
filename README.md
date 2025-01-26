@@ -16,7 +16,7 @@ I scraped data from Google Flight and I was planning to use ICAO as second scrap
 
 But unfortunatly the site was down for a long period so I gave up on it for the Machine Learning part and did some Linear Regression based on the maximum carbon emission of all flights (splitting in 3 categories the flights : Low carbon impact, Medium and Heavy).
 
-If needed you can consult the Word "Part1" to have the context of the project. 
+If needed you can consult the Word "Description" to have the context of the project. 
 
 You have also the presentation I did on Friday 24th, all the code (API, scraping and ML).
 

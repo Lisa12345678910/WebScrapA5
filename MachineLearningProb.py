@@ -24,15 +24,15 @@ def prepare_classification_data(flight_data):
     labels = ['Faible', 'Moyen', 'Fort']
     df['Emission_Class'] = pd.cut(df['Emission (kg CO2)'], bins=bins, labels=labels, right=False, include_lowest=True)
 
-    df.dropna(subset=['Emission (kg CO2)', 'Price (€)', 'Emission_Class'], inplace=True)
+    df.dropna(subset=['Emission (kg CO2)',  'Emission_Class'], inplace=True)
 
     return df
 
 def perform_classification(df):
-    X = df[['Emission (kg CO2)', 'Price (€)']]
+    X = df[['Emission (kg CO2)']]
     y = df['Emission_Class']
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
@@ -54,3 +54,5 @@ def plot_confusion_matrix(conf_matrix, labels):
     plt.xlabel('Prédiction')
     plt.ylabel('Réel')
     plt.show()
+
+

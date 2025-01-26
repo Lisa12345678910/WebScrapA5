@@ -9,11 +9,7 @@ import pandas as pd
 import time
 import logging
 from datetime import datetime
-from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
 import time
 import re
 
@@ -28,7 +24,7 @@ def input_search_criteria(origin, destination, travel_departure):
 
     # Open Google Flights
     driver.get('https://www.google.com/travel/flights?hl=en')
-    date_input = WebDriverWait(driver, 10).until(
+    date_input = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, '[aria-label="Departure"]'))
     )
     date_input.clear()

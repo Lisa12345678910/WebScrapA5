@@ -10,7 +10,7 @@ I wanted to help users to make more responsible choices.
 Here are a summary of what I used to accomplish the tasks :
 - Streamlit for the API part
 - BeautifulSoup and Selenium for the Scraping part
-- SkLearn with Linear Regression for the ML part.
+- Sklearn with Linear Regression for the ML part.
 
 I scraped data from Google Flight and I was planning to use ICAO as second scraping site where I could get the mean of the carbon emission from one place to another.
 
